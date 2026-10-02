@@ -24,6 +24,8 @@ class Gambiarrascript < Formula
     end
   end
 
+  conflicts_with "ghostscript", because: "both install a `gs` binary"
+
   def install
     bin.install "gs"
   end
