@@ -2,25 +2,25 @@ class Gambiarrascript < Formula
   desc "Linguagem de programacao em portugues, feita na base da gambiarra"
   homepage "https://erikomis.github.io/gambiarrascript/"
   license "MIT"
-  version "0.2.0"
+  version "0.3.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/erikomis/gambiarrascript/releases/download/v#{version}/gs_#{version}_darwin_arm64.tar.gz"
-      sha256 "500a11b7d03cbde6366c2b73c027e68e09c9b9a851018c247a01bb851fe2aeac"
+      sha256 "5f64908ed1c18ec367f0e842ec492f9816221521d67c3255bbfb49e6079c3bd6"
     else
       url "https://github.com/erikomis/gambiarrascript/releases/download/v#{version}/gs_#{version}_darwin_amd64.tar.gz"
-      sha256 "d83305a2d8906c63df9791557d5baca465faf8781a838059589cecf14e22f478"
+      sha256 "06f373e479db595cf039889e197c26bdd3f17bf23a6853d913d44098f00013a0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/erikomis/gambiarrascript/releases/download/v#{version}/gs_#{version}_linux_arm64.tar.gz"
-      sha256 "491eda1a189a9056756dea16d3696e258995b875a1bf9949a619c0b2a0fab185"
+      sha256 "891aa20edbe34041cd1680ddff0e3a2925998b72161bd080c9217f2ee050c24b"
     else
       url "https://github.com/erikomis/gambiarrascript/releases/download/v#{version}/gs_#{version}_linux_amd64.tar.gz"
-      sha256 "548c9cac7fcefe30b22481f2fe9ff370d2f1efd26630013dfc592973bcd6540c"
+      sha256 "774d80bf0c0d01ba86b9014f8c85442e110670e22775379c55e950603be94efe"
     end
   end
 
